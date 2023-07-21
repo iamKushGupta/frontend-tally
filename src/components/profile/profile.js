@@ -76,7 +76,9 @@ class Profile extends React.Component {
             <div className="profile-container flex-column">
                 <div className="profile-page flex-column">
                     { this.props.match.url === '/profile' ? 
-                        (<button className="profile-page-logout button" onClick={this.logoutCurrentUser}>Logout </button>)
+                        (   
+                            <button className="profile-page-logout button" onClick={this.logoutCurrentUser}>Logout </button>
+                        )
                         :
                         ""
                     }
